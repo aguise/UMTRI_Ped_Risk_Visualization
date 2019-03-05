@@ -35,7 +35,7 @@
         GraphicsLayer, dom
       ) {
         const map = new Map({
-          basemap: "dark-gray"
+          basemap: "gray"
         });
         console.log("Map ready");
         const view = new MapView({
@@ -497,6 +497,7 @@
             label: "school accidents"
           }]
         };
+
         function findMaxMin(inputField){
           if(inputField == "Bie" || inputField == "Pie" ) return [5, 27];
           
@@ -520,40 +521,101 @@
           }
         }
         // Definition of polygon renderer with continuous color 
-        function generatePolygonRenderer(inputField){
-          const minMaxValue = findMaxMin(fieldDictionary[inputField]); 
-          const defaultSym = {
-            type: "simple-fill", 
-            outline: { 
-              color: [128, 128, 128, 0.2],
-              width: "0.5px"
-            }
-          };
-          const colorVisVar = {
-            type: "color",
-            field: fieldDictionary[inputField],
-            stops: [
-              { value: minMaxValue[0], color: "#FFFCD4" },
-              { value: minMaxValue[1], color: "#0D2644" }
-            ],
-            legendOptions: {
-              title: "Polygon " + inputField + " value"
-            }
-          };
-          var rendererPolygon = {
-            type: "simple", // autocasts as new SimpleRenderer()
-            symbol: defaultSym,
-            label: "Polygon",
-            visualVariables: colorVisVar
-          };
-          if (fieldDictionary[inputField] == "Pie"){
-            rendererPolygon = rendererPolygonPie;
-          }
-          else if (fieldDictionary[inputField] == "Bie"){
-            rendererPolygon = rendererPolygonBie;
-          }
-          return rendererPolygon;
-        }
+        function generatePolygonRenderer(inputField) {
+        	const minMaxValue = findMaxMin(fieldDictionary[inputField]); 
+        	const defaultSym = {
+            	type: "simple-fill", 
+            	outline: { 
+              	color: [128, 128, 128, 0.2],
+              	width: "0.5px"
+            	}
+          	};
+
+	        const colorVisVar = {
+	            type: "color",
+	            field: fieldDictionary[inputField],
+	            stops: [
+	              { value: minMaxValue[0], color: "#ffffd4" },
+	              { value: minMaxValue[1], color: "#993404" }
+	            ],
+	            legendOptions: {
+	              	title: "Polygon " + inputField + " value"
+	            }
+	        };
+	        const colorVisVar_PedRisk = {
+	            type: "color",
+	            field: fieldDictionary[inputField],
+	            stops: [
+	              { value: minMaxValue[0], color: "#f2f0f7" },
+	              { value: minMaxValue[1], color: "#54278f" }
+	            ],
+	            legendOptions: {
+	              	title: "Polygon " + inputField + " value"
+	            }
+	        };
+	        const colorVisVar_PedExposure = {
+	            type: "color",
+	            field: fieldDictionary[inputField],
+	            stops: [
+	              { value: minMaxValue[0], color: "#edf8fb" },
+	              { value: minMaxValue[1], color: "#006d2c" }
+	            ],
+	            legendOptions: {
+	              	title: "Polygon " + inputField + " value"
+	            }
+	        };
+	        const colorVisVar_BikeExposure = {
+	            type: "color",
+	            field: fieldDictionary[inputField],
+	            stops: [
+	              { value: minMaxValue[0], color: "#ffffcc" },
+	              { value: minMaxValue[1], color: "#253494" }
+	            ],
+	            legendOptions: {
+	              	title: "Polygon " + inputField + " value"
+	            }
+	        };
+       		var rendererPolygon = {
+        		type: "simple", // autocasts as new SimpleRenderer()
+            	symbol: defaultSym,
+            	label: "Polygon",
+            	visualVariables: colorVisVar
+        	};
+        	var rendererPolygon_PedRisk = {
+        		type: "simple", // autocasts as new SimpleRenderer()
+            	symbol: defaultSym,
+            	label: "Polygon",
+            	visualVariables: colorVisVar_PedRisk
+        	};
+        	var rendererPolygon_PedExposure = {
+        		type: "simple", // autocasts as new SimpleRenderer()
+            	symbol: defaultSym,
+            	label: "Polygon",
+            	visualVariables: colorVisVar_PedExposure
+        	};
+        	var rendererPolygon_BikeExposure = {
+        		type: "simple", // autocasts as new SimpleRenderer()
+            	symbol: defaultSym,
+            	label: "Polygon",
+            	visualVariables: colorVisVar_BikeExposure
+        	};
+        	if (fieldDictionary[inputField] == "Pie"){
+            	rendererPolygon = rendererPolygonPie;
+        	}
+        	else if (fieldDictionary[inputField] == "Bie"){
+        		rendererPolygon = rendererPolygonBie;
+        	}
+        	else if (fieldDictionary[inputField] == "Ped_Risk"){
+        		rendererPolygon = rendererPolygon_PedRisk;
+        	}
+        	else if (fieldDictionary[inputField] == "PedExp"){
+        		rendererPolygon = rendererPolygon_PedExposure;
+        	}
+        	else if (fieldDictionary[inputField] == "BikeExp"){
+        		rendererPolygon = rendererPolygon_BikeExposure;
+        	}
+       		return rendererPolygon;
+    	}
   
         // Setting the polygon renderer to Bie as default before the polygon is added
         rendererPolygon = generatePolygonRenderer("Bike_Index_of_the_Environment");
