@@ -371,11 +371,203 @@
             color: [ 255, 255, 255, 0.5 ]
           }
         };
+
+        const less20_Ped_Risk = {
+          type: "simple-fill",  
+          color: "#f2f0f7",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less40_Ped_Risk = {
+          type: "simple-fill",  
+          color: "#cbc9e2",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less60_Ped_Risk = {
+          type: "simple-fill",  
+          color: "#9e9ac8",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less80_Ped_Risk = {
+          type: "simple-fill",  
+          color: "#756bb1",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less100_Ped_Risk = {
+          type: "simple-fill",  
+          color: "#54278f",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
+        const less20_Bike_Exp = {
+          type: "simple-fill",  
+          color: "#ffffcc",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less40_Bike_Exp = {
+          type: "simple-fill",  
+          color: "#a1dab4",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less60_Bike_Exp = {
+          type: "simple-fill",  
+          color: "#41b6c4",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less80_Bike_Exp = {
+          type: "simple-fill",  
+          color: "#2c7fb8",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less100_Bike_Exp = {
+          type: "simple-fill",  
+          color: "#253494",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
+        const less20_Ped_Exp = {
+          type: "simple-fill",  
+          color: "#edf8fb",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less40_Ped_Exp = {
+          type: "simple-fill",  
+          color: "#b2e2e2",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less60_Ped_Exp = {
+          type: "simple-fill",  
+          color: "#66c2a4",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less80_Ped_Exp = {
+          type: "simple-fill",  
+          color: "#2ca25f",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less100_Ped_Exp = {
+          type: "simple-fill",  
+          color: "#006d2c",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
+        const less20_Bike_Risk = {
+          type: "simple-fill",  
+          color: "#ffffd4",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less40_Bike_Risk = {
+          type: "simple-fill",  
+          color: "#fed98e",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less60_Bike_Risk = {
+          type: "simple-fill",  
+          color: "#fe9929",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less80_Bike_Risk = {
+          type: "simple-fill",  
+          color: "#d95f0e",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less100_Bike_Risk = {
+          type: "simple-fill",  
+          color: "#993404",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
+        const BikeRoadColors = {
+        	colorsForClassBreaks: {
+        		colors: [0, 1, 2, 3, 4],
+        		numClasses: 5
+        	}
+        };
+
         // Color bin definition Pie 
         const rendererPolygonPie = {
           type: "class-breaks", 
           field: "Pie",  
-          legendOptions: {title: "Pie values"},
+          legendOptions: {title: "PIE values"},
           defaultSymbol: {
             type: "simple-fill",  
             color: "black",
@@ -388,31 +580,36 @@
           defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0,
-            maxValue: 6.999,
-            symbol: less25,
-            label: "< 7" 
+            maxValue: 7.999,
+            symbol: less20_Ped_Risk,
+            label: "0 to 8" 
           }, {
-            minValue: 7.0,
-            maxValue: 17.499,
-            symbol: less50,
-            label: "7 - 17.5" 
+            minValue: 8,
+            maxValue: 21.999,
+            symbol: less40_Ped_Risk,
+            label: "8 to 22" 
           }, {
-            minValue: 17.5,
-            maxValue: 28.499,
-            symbol: more50,
-            label: "17.5 - 28.5"
+            minValue: 22,
+            maxValue: 30.999,
+            symbol: less60_Ped_Risk,
+            label: "22 to 31"
           }, {
-            minValue: 28.5,
-            maxValue: 500,
-            symbol: more75,
-            label: "> 28.5" 
+            minValue: 31,
+            maxValue: 42.999,
+            symbol: less80_Ped_Risk,
+            label: "31 to 43" 
+          }, {
+          	minValue: 43,
+            maxValue: 75,
+            symbol: less100_Ped_Risk,
+            label: "43 to 75"
           }]
         };
         // Color bin definition Bie 
         const rendererPolygonBie = {
           type: "class-breaks", 
           field: "Bie",  
-          legendOptions: {title: "Bie values"},
+          legendOptions: {title: "BIE values"},
           defaultSymbol: {
             type: "simple-fill",  
             color: "black",
@@ -425,26 +622,284 @@
           defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0,
-            maxValue: 6.999,
+            maxValue: 10.999,
             symbol: less25,
-            label: "< 7" 
+            label: "0 to 11" 
           }, {
-            minValue: 7.0,
-            maxValue: 17.499,
+            minValue: 11,
+            maxValue: 15.999,
             symbol: less50,
-            label: "7 - 17.5" 
+            label: "11 to 16" 
           }, {
-            minValue: 17.5,
-            maxValue: 28.499,
+            minValue: 16,
+            maxValue: 34.999,
             symbol: more50,
-            label: "17.5 - 28.5"
+            label: "16 to 35"
           }, {
-            minValue: 28.5,
-            maxValue: 500,
+            minValue: 35,
+            maxValue: 54.999,
             symbol: more75,
-            label: "> 28.5" 
+            label: "35 to 55" 
+          }, {
+          	minValue: 55,
+            maxValue: 99,
+            symbol: more75,
+            label: "55 to 99" 
           }]
         };
+
+        const rendererPolygon_PedRisk = {
+          type: "class-breaks", 
+          field: "Ped_Risk",  
+          legendOptions: {title: "Pedestrian Risk Values"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 0.1,
+            maxValue: 0.199,
+            symbol: less20_Ped_Risk,
+            label: "0.1 to 0.2" 
+          }, {
+            minValue: 0.2,
+            maxValue: 0.999,
+            symbol: less40_Ped_Risk,
+            label: "0.2 to 1" 
+          }, {
+            minValue: 1,
+            maxValue: 4.999,
+            symbol: less60_Ped_Risk,
+            label: "1 to 5"
+          }, {
+            minValue: 5,
+            maxValue: 11.999,
+            symbol: less80_Ped_Risk,
+            label: "5 to 12" 
+          }, {
+          	minValue: 12,
+          	maxValue: 50,
+          	symbol: less100_Ped_Risk,
+          	label: "12 to 50"
+          }]
+        };
+
+        const rendererPolygon_BikeRisk = {
+          type: "class-breaks", 
+          field: "Ped_Risk",  
+          legendOptions: {title: "Bicycle Risk Values"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 0.1,
+            maxValue: 0.199,
+            symbol: less20_Bike_Risk,
+            label: "0.1 to 0.2" 
+          }, {
+            minValue: 0.2,
+            maxValue: 0.999,
+            symbol: less40_Bike_Risk,
+            label: "0.2 to 1" 
+          }, {
+            minValue: 1,
+            maxValue: 3.999,
+            symbol: less60_Bike_Risk,
+            label: "1 to 4"
+          }, {
+            minValue: 4,
+            maxValue: 8.999,
+            symbol: less80_Bike_Risk,
+            label: "4 to 9" 
+          }, {
+          	minValue: 9,
+          	maxValue: 50,
+          	symbol: less100_Bike_Risk,
+          	label: "9 to 50"
+          }]
+        };
+
+        const rendererPolygon_NM_Risk = {
+          type: "class-breaks", 
+          field: "Ped_Risk",  
+          legendOptions: {title: "Non-Motorized Risk Values"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 0.1,
+            maxValue: 0.299,
+            symbol: less20_Ped_Risk,
+            label: "0.1 to 0.3" 
+          }, {
+            minValue: 0.3,
+            maxValue: 1.999,
+            symbol: less40_Ped_Risk,
+            label: "0.3 to 2" 
+          }, {
+            minValue: 2,
+            maxValue: 6.999,
+            symbol: less60_Ped_Risk,
+            label: "2 to 7"
+          }, {
+            minValue: 7,
+            maxValue: 15.999,
+            symbol: less80_Ped_Risk,
+            label: "7 to 16" 
+          }, {
+          	minValue: 16,
+          	maxValue: 70,
+          	symbol: less100_Ped_Risk,
+          	label: "16 to 70"
+          }]
+        };
+
+        const rendererPolygon_PedExposure = {
+          type: "class-breaks", 
+          field: "Ped_Risk",  
+          legendOptions: {title: "Pedestrian Exposure Values"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 1,
+            maxValue: 3.999,
+            symbol: less20_Ped_Exp,
+            label: "0.1 to 0.2" 
+          }, {
+            minValue: 4,
+            maxValue: 19.999,
+            symbol: less40_Ped_Exp,
+            label: "0.2 to 1" 
+          }, {
+            minValue: 20,
+            maxValue: 79.999,
+            symbol: less60_Ped_Exp,
+            label: "1 to 5"
+          }, {
+            minValue: 80,
+            maxValue: 199.999,
+            symbol: less80_Ped_Exp,
+            label: "5 to 12" 
+          }, {
+          	minValue: 200,
+          	maxValue: 2400,
+          	symbol: less100_Ped_Exp,
+          	label: "12 to 50"
+          }]
+        };
+
+        const rendererPolygon_BikeExposure = {
+          type: "class-breaks", 
+          field: "Ped_Risk",  
+          legendOptions: {title: "Bike Exposure Values"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 1,
+            maxValue: 3.999,
+            symbol: less20_Bike_Exp,
+            label: "1 to 4" 
+          }, {
+            minValue: 4,
+            maxValue: 14.999,
+            symbol: less40_Bike_Exp,
+            label: "4 to 15" 
+          }, {
+            minValue: 15,
+            maxValue: 44.999,
+            symbol: less60_Bike_Exp,
+            label: "15 to 45"
+          }, {
+            minValue: 45,
+            maxValue: 84.999,
+            symbol: less80_Bike_Exp,
+            label: "45 to 85" 
+          }, {
+          	minValue: 85,
+          	maxValue: 1100,
+          	symbol: less100_Bike_Exp,
+          	label: "85 to 1100"
+          }]
+        };
+
+        const rendererPolygon_NM_Exposure = {
+          type: "class-breaks", 
+          field: "Ped_Risk",  
+          legendOptions: {title: "Non-Motorized Exposure Values"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 1,
+            maxValue: 4.999,
+            symbol: less20_Bike_Exp,
+            label: "1 to 5" 
+          }, {
+            minValue: 5,
+            maxValue: 29.999,
+            symbol: less40_Bike_Exp,
+            label: "5 to 30" 
+          }, {
+            minValue: 30,
+            maxValue: 114.999,
+            symbol: less60_Bike_Exp,
+            label: "30 to 115"
+          }, {
+            minValue: 115,
+            maxValue: 264.999,
+            symbol: less80_Bike_Exp,
+            label: "115 to 265" 
+          }, {
+          	minValue: 265,
+          	maxValue: 3500,
+          	symbol: less100_Bike_Exp,
+          	label: "265 to 3500"
+          }]
+        };
+
         // Point layer definition by individual type
         const schoolSym = {
           type: "simple-marker", 
@@ -522,99 +977,58 @@
         }
         // Definition of polygon renderer with continuous color 
         function generatePolygonRenderer(inputField) {
-        	const minMaxValue = findMaxMin(fieldDictionary[inputField]); 
-        	const defaultSym = {
-            	type: "simple-fill", 
-            	outline: { 
-              	color: [128, 128, 128, 0.2],
-              	width: "0.5px"
-            	}
-          	};
 
-	        const colorVisVar = {
-	            type: "color",
-	            field: fieldDictionary[inputField],
-	            stops: [
-	              { value: minMaxValue[0], color: "#ffffd4" },
-	              { value: minMaxValue[1], color: "#993404" }
-	            ],
-	            legendOptions: {
-	              	title: "Polygon " + inputField + " value"
-	            }
-	        };
-	        const colorVisVar_PedRisk = {
-	            type: "color",
-	            field: fieldDictionary[inputField],
-	            stops: [
-	              { value: minMaxValue[0], color: "#f2f0f7" },
-	              { value: minMaxValue[1], color: "#54278f" }
-	            ],
-	            legendOptions: {
-	              	title: "Polygon " + inputField + " value"
-	            }
-	        };
-	        const colorVisVar_PedExposure = {
-	            type: "color",
-	            field: fieldDictionary[inputField],
-	            stops: [
-	              { value: minMaxValue[0], color: "#edf8fb" },
-	              { value: minMaxValue[1], color: "#006d2c" }
-	            ],
-	            legendOptions: {
-	              	title: "Polygon " + inputField + " value"
-	            }
-	        };
-	        const colorVisVar_BikeExposure = {
-	            type: "color",
-	            field: fieldDictionary[inputField],
-	            stops: [
-	              { value: minMaxValue[0], color: "#ffffcc" },
-	              { value: minMaxValue[1], color: "#253494" }
-	            ],
-	            legendOptions: {
-	              	title: "Polygon " + inputField + " value"
-	            }
-	        };
-       		var rendererPolygon = {
-        		type: "simple", // autocasts as new SimpleRenderer()
-            	symbol: defaultSym,
-            	label: "Polygon",
-            	visualVariables: colorVisVar
-        	};
-        	var rendererPolygon_PedRisk = {
-        		type: "simple", // autocasts as new SimpleRenderer()
-            	symbol: defaultSym,
-            	label: "Polygon",
-            	visualVariables: colorVisVar_PedRisk
-        	};
-        	var rendererPolygon_PedExposure = {
-        		type: "simple", // autocasts as new SimpleRenderer()
-            	symbol: defaultSym,
-            	label: "Polygon",
-            	visualVariables: colorVisVar_PedExposure
-        	};
-        	var rendererPolygon_BikeExposure = {
-        		type: "simple", // autocasts as new SimpleRenderer()
-            	symbol: defaultSym,
-            	label: "Polygon",
-            	visualVariables: colorVisVar_BikeExposure
-        	};
-        	if (fieldDictionary[inputField] == "Pie"){
-            	rendererPolygon = rendererPolygonPie;
-        	}
-        	else if (fieldDictionary[inputField] == "Bie"){
-        		rendererPolygon = rendererPolygonBie;
-        	}
-        	else if (fieldDictionary[inputField] == "Ped_Risk"){
-        		rendererPolygon = rendererPolygon_PedRisk;
-        	}
-        	else if (fieldDictionary[inputField] == "PedExp"){
-        		rendererPolygon = rendererPolygon_PedExposure;
-        	}
-        	else if (fieldDictionary[inputField] == "BikeExp"){
-        		rendererPolygon = rendererPolygon_BikeExposure;
-        	}
-       		return rendererPolygon;
+          const minMaxValue = findMaxMin(fieldDictionary[inputField]); 
+          const defaultSym = {
+            type: "simple-fill", 
+            outline: { 
+              color: [128, 128, 128, 0.2],
+              width: "0.5px"
+            }
+          };
+          const colorVisVar = {
+            type: "color",
+            field: fieldDictionary[inputField],
+            stops: [
+              { value: minMaxValue[0], color: "#FFFCD4" },
+              { value: minMaxValue[1], color: "#0D2644" }
+            ],
+            legendOptions: {
+              title: "Polygon " + inputField + " value"
+            }
+          };
+          var rendererPolygon = {
+            type: "simple", // autocasts as new SimpleRenderer()
+            symbol: defaultSym,
+            label: "Polygon",
+            visualVariables: colorVisVar
+          };
+
+          if (fieldDictionary[inputField] == "Pie"){
+            rendererPolygon = rendererPolygonPie;
+          }
+          else if (fieldDictionary[inputField] == "Bie"){
+        	rendererPolygon = rendererPolygonBie;
+          }
+          else if (fieldDictionary[inputField] == "Ped_Risk"){
+        	rendererPolygon = rendererPolygon_PedRisk;
+          }
+          else if (fieldDictionary[inputField] == "Bike_Risk"){
+        	rendererPolygon = rendererPolygon_BikeRisk;
+          }
+          else if (fieldDictionary[inputField] == "NMRisk"){
+        	rendererPolygon = rendererPolygon_NM_Risk;
+          }
+          else if (fieldDictionary[inputField] == "PedExp"){
+        	rendererPolygon = rendererPolygon_PedExposure;
+          }
+          else if (fieldDictionary[inputField] == "BikeExp"){
+        	rendererPolygon = rendererPolygon_BikeExposure;
+          }
+          else if (fieldDictionary[inputField] == "NMExp") {
+        	rendererPolygon = rendererPolygon_NM_Exposure;
+          }
+       	  return rendererPolygon;
     	}
   
         // Setting the polygon renderer to Bie as default before the polygon is added
@@ -644,18 +1058,24 @@
           id: "linePedLayer",
           visible: false
         });
+
         var colorParamsPed = {
           layer: linePedLayer,
           basemap: map.basemap,
           field: "Shape__Length",
-          theme: "above-and-below"
+          legendOptions: {
+          	title: "Pedestrian Exposure"
+          },
+
         };
         var colorParamsBike = {
           layer: lineBikeLayer,
           basemap: map.basemap,
           field: "Shape__Length",
-          theme: "above-and-below"
-        };
+          legendOptions: {
+          	title: "Bicycle Exposure"
+          },
+      	};
         const pointLayer = new FeatureLayer({
           url: "https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/Points_of_Interest_aguise/FeatureServer/0?token=KZn8xOjNVlJcvNfbpkB-r0AXY_vUpPR0J-dGWx6jXx3GHWLlXAn--DjiehlRGWYJxo6cEdAYUDk-UKEznr3AOt9cvAmy5cr9DUURryn3ozlb4za5DNv6N93W_f8S21YAcpd9DHSa-heHedhv3EqDe43qpfvXAsGLeL7-DEAqPBxkt6SPX4evcgWLakiC53bUE_wLIZu4s-0GW_gFRJnjO1zRyk0K1D6zNyhkvSa5YEABprjlUSga0ISLWtHzT5jA",
           outFields: ["*"],
@@ -698,7 +1118,7 @@
           });
         });
 //----------------------------------------------------------------------------------------------------
-        colorRendererCreator.createContinuousRenderer(colorParamsPed)
+        colorRendererCreator.createClassBreaksRenderer(colorParamsPed)
           .then(function(response) {
             // set the renderer to the layer and add it to the map
             linePedLayer.renderer = response.renderer;
@@ -712,7 +1132,7 @@
             console.log("there was an error: ", error);
           });
 //----------------------------------------------------------------------------------------------------
-        colorRendererCreator.createContinuousRenderer(colorParamsBike)
+        colorRendererCreator.createClassBreaksRenderer(colorParamsBike)
           .then(function(response) {
             // set the renderer to the layer and add it to the map
             lineBikeLayer.renderer = response.renderer;
@@ -865,7 +1285,7 @@
     }
     #backgroundDiv {
       top: 85px;
-      left: 15px;
+      left: 1025px;
       position: absolute;
       z-index: 99;
       background-color: black;
@@ -878,7 +1298,7 @@
     }
     #infoDiv {
       top: 160px;
-      left: 15px;
+      left: 1025px;
       position: absolute;
       z-index: 99;
       background-color: black;
@@ -891,7 +1311,7 @@
     }
     #layerToggle {
       top: 240px;
-      left: 15px;
+      left: 1025px;
       position: absolute;
       z-index: 99;
       background-color: black;
@@ -921,11 +1341,10 @@
     <div id="infoDiv">
       Select attribute: &nbsp;&nbsp;  
         <a id="infoUrl" href="https://github.com/caocscar/pedbikeriskexposure/blob/master/draft.md#pedestrian-index-of-the-environment-pie" target="_blank" style="color:yellow"> Attribute Info </a> <br/> 
-      <select id="att-type"></select> 
+      <select id="att-type" style = "width: 215px"></select> 
       <br> Range:
       <input id="range" type="range" min="10" max="100" step="10" value="100"> 
       <span id="range-value"> 100 </span>
-
     </div>
     
     <span id="layerToggle">
