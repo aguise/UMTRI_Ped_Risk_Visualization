@@ -230,42 +230,98 @@
           }]
         };
         // Color bin individual bin definition
-        const less25 = {
+        const less20_BIE = {
           type: "simple-fill",  // autocasts as new SimpleFillSymbol()
-          color: "#fffcd4",
+          color: "#ffffb2",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
         };
-        const less50 = {
+        const less40_BIE = {
           type: "simple-fill",  
-          color: "#b1cdc2",
+          color: "#fecc5c",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
         };
-        const more50 = {
+        const less60_BIE = {
           type: "simple-fill", 
-          color: "#38627a",
+          color: "#fd8d3c",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
         };
-        const more75 = {
+        const less80_BIE = {
           type: "simple-fill",  
-          color: "#0d2644",
+          color: "#f03b20",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
         };
+        const less100_BIE = {
+          type: "simple-fill",  
+          color: "#bd0026",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
+        const less20_PIE = {
+          type: "simple-fill",  // autocasts as new SimpleFillSymbol()
+          color: "#f1eef6",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less40_PIE = {
+          type: "simple-fill",  
+          color: "#bdc9e1",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less60_PIE = {
+          type: "simple-fill", 
+          color: "#74a9cf",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less80_PIE = {
+          type: "simple-fill",  
+          color: "#2b8cbe",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less100_PIE = {
+          type: "simple-fill",  
+          color: "#045a8d",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
 
         const less20_Ped_Risk = {
           type: "simple-fill",  
@@ -407,7 +463,7 @@
 
         const less20_Bike_Risk = {
           type: "simple-fill",  
-          color: "#ffffd4",
+          color: "#fee5d9",
           style: "solid",
           outline: {
             width: 0.2,
@@ -416,7 +472,7 @@
         };
         const less40_Bike_Risk = {
           type: "simple-fill",  
-          color: "#fed98e",
+          color: "#fcae91",
           style: "solid",
           outline: {
             width: 0.2,
@@ -425,7 +481,7 @@
         };
         const less60_Bike_Risk = {
           type: "simple-fill",  
-          color: "#fe9929",
+          color: "#fb6a4a",
           style: "solid",
           outline: {
             width: 0.2,
@@ -434,7 +490,7 @@
         };
         const less80_Bike_Risk = {
           type: "simple-fill",  
-          color: "#d95f0e",
+          color: "#de2d26",
           style: "solid",
           outline: {
             width: 0.2,
@@ -443,7 +499,7 @@
         };
         const less100_Bike_Risk = {
           type: "simple-fill",  
-          color: "#993404",
+          color: "#a50f15",
           style: "solid",
           outline: {
             width: 0.2,
@@ -451,137 +507,219 @@
           }
         };
 
-        const less20_linePed = {
+        const less20_NMRisk = {
           type: "simple-fill",  
-          color: "#edf8e9",
+          color: "#eff3ff",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
-      };
-      const less40_linePed = {
+        };
+        const less40_NMRisk = {
           type: "simple-fill",  
-          color: "#bae4b3",
+          color: "#bdd7e7",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
-      };
-      const less60_linePed = {
+        };
+        const less60_NMRisk = {
           type: "simple-fill",  
-          color: "#74c476",
+          color: "#6baed6",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
-      };
-      const less80_linePed = {
+        };
+        const less80_NMRisk = {
           type: "simple-fill",  
-          color: "#31a354",
+          color: "#3182bd",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
           }
-      };
-      const less100_linePed = {
+        };
+        const less100_NMRisk = {
           type: "simple-fill",  
-          color: "#006d2c",
+          color: "#08519c",
           style: "solid",
           outline: {
             width: 0.2,
             color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
+        const less20_NMExp = {
+          type: "simple-fill",  
+          color: "#feedde",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less40_NMExp = {
+          type: "simple-fill",  
+          color: "#fdbe85",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less60_NMExp = {
+          type: "simple-fill",  
+          color: "#fd8d3c",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less80_NMExp = {
+          type: "simple-fill",  
+          color: "#e6550d",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+        const less100_NMExp = {
+          type: "simple-fill",  
+          color: "#a63603",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+        };
+
+        const less20_lineBike = {
+          type: "simple-fill",  
+          color: "#f1eef6",
+          style: "solid",
+          outline: {
+            width: 2,
+            color: "#f1eef6"
+          }
+      };
+      const less40_lineBike = {
+          type: "simple-fill",  
+          color: "#d7b5d8",
+          style: "solid",
+          outline: {
+            width: 2,
+            color: "#d7b5d8"
+          }
+      };
+      const less60_lineBike = {
+          type: "simple-fill",  
+          color: "#df65b0",
+          style: "solid",
+          outline: {
+            width: 2,
+            color: "#df65b0"
+          }
+      };
+      const less80_lineBike = {
+          type: "simple-fill",  
+          color: "#dd1c77",
+          style: "solid",
+          outline: {
+            width: 2,
+            color: "#dd1c77"
+          }
+      };
+      const less100_lineBike = {
+          type: "simple-fill",  
+          color: "#980043",
+          style: "solid",
+          outline: {
+            width: 2,
+            color: "#980043"
           }
       };
 
-      const less20_lineBike = {
+      const less20_linePed = {
       	type: "simple-fill",  
-        color: "#eff3ff",
+        color: "#feebe2",
         style: "solid",
         outline: {
-          width: 0.2,
-          color: [ 255, 255, 255, 0.5 ]
-         }
+            width: 2,
+            color: "#feebe2"
+          }
       };
-      const less40_lineBike = {
+      const less40_linePed = {
       	type: "simple-fill",  
-        color: "#bdd7e7",
+        color: "#fbb4b9",
         style: "solid",
         outline: {
-          width: 0.2,
-          color: [ 255, 255, 255, 0.5 ]
-         }
+            width: 2,
+            color: "#fbb4b9"
+          }
       };
-      const less60_lineBike = {
+      const less60_linePed = {
       	type: "simple-fill",  
-        color: "#6baed6",
+        color: "#f768a1",
         style: "solid",
         outline: {
-          width: 0.2,
-          color: [ 255, 255, 255, 0.5 ]
-         }
+            width: 2,
+            color: "#f768a1"
+          }
       };
-      const less80_lineBike = {
+      const less80_linePed = {
       	type: "simple-fill",  
-        color: "#3182bd",
+        color: "#c51b8a",
         style: "solid",
         outline: {
-          width: 0.2,
-          color: [ 255, 255, 255, 0.5 ]
-         }
+            width: 2,
+            color: "#c51b8a"
+          }
       };
-      const less100_lineBike = {
+      const less100_linePed = {
       	type: "simple-fill",  
-        color: "#08519c",
+        color: "#7a0177",
         style: "solid",
         outline: {
-          width: 0.2,
-          color: [ 255, 255, 255, 0.5 ]
-         }
+            width: 2,
+            color: "#7a0177"
+          }
       };
 
         // Color bin definition Pie 
         const rendererPolygonPie = {
           type: "class-breaks", 
           field: "Pie",  
-          legendOptions: {title: "PIE values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
+          legendOptions: {title: "PIE values"}, 
           classBreakInfos: [{
             minValue: 0,
             maxValue: 7.999,
-            symbol: less20_Ped_Risk,
+            symbol: less20_PIE,
             label: "0 to 8" 
           }, {
             minValue: 8,
             maxValue: 21.999,
-            symbol: less40_Ped_Risk,
+            symbol: less40_PIE,
             label: "8 to 22" 
           }, {
             minValue: 22,
             maxValue: 30.999,
-            symbol: less60_Ped_Risk,
+            symbol: less60_PIE,
             label: "22 to 31"
           }, {
             minValue: 31,
             maxValue: 42.999,
-            symbol: less80_Ped_Risk,
+            symbol: less80_PIE,
             label: "31 to 43" 
           }, {
           	minValue: 43,
             maxValue: 75,
-            symbol: less100_Ped_Risk,
+            symbol: less100_PIE,
             label: "43 to 75"
           }]
         };
@@ -590,40 +728,30 @@
           type: "class-breaks", 
           field: "Bie",  
           legendOptions: {title: "BIE values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0,
             maxValue: 10.999,
-            symbol: less25,
+            symbol: less20_BIE,
             label: "0 to 11" 
           }, {
             minValue: 11,
             maxValue: 15.999,
-            symbol: less50,
+            symbol: less40_BIE,
             label: "11 to 16" 
           }, {
             minValue: 16,
             maxValue: 34.999,
-            symbol: more50,
+            symbol: less60_BIE,
             label: "16 to 35"
           }, {
             minValue: 35,
             maxValue: 54.999,
-            symbol: more75,
+            symbol: less80_BIE,
             label: "35 to 55" 
           }, {
           	minValue: 55,
             maxValue: 99,
-            symbol: more75,
+            symbol: less100_BIE,
             label: "55 to 99" 
           }]
         };
@@ -632,16 +760,6 @@
           type: "class-breaks", 
           field: "Ped_Risk",  
           legendOptions: {title: "Pedestrian Risk Values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0.1,
             maxValue: 0.199,
@@ -674,16 +792,6 @@
           type: "class-breaks", 
           field: "Bike_Risk",  
           legendOptions: {title: "Bicycle Risk Values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0.1,
             maxValue: 0.199,
@@ -716,40 +824,30 @@
           type: "class-breaks", 
           field: "NMRisk",  
           legendOptions: {title: "Non-Motorized Risk Values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0.1,
             maxValue: 0.299,
-            symbol: less20_Ped_Risk,
+            symbol: less20_NMRisk,
             label: "0.1 to 0.3" 
           }, {
             minValue: 0.3,
             maxValue: 1.999,
-            symbol: less40_Ped_Risk,
+            symbol: less40_NMRisk,
             label: "0.3 to 2" 
           }, {
             minValue: 2,
             maxValue: 6.999,
-            symbol: less60_Ped_Risk,
+            symbol: less60_NMRisk,
             label: "2 to 7"
           }, {
             minValue: 7,
             maxValue: 15.999,
-            symbol: less80_Ped_Risk,
+            symbol: less80_NMRisk,
             label: "7 to 16" 
           }, {
           	minValue: 16,
           	maxValue: 70,
-          	symbol: less100_Ped_Risk,
+          	symbol: less100_NMRisk,
           	label: "16 to 70"
           }]
         };
@@ -758,16 +856,6 @@
           type: "class-breaks", 
           field: "PedExp",  
           legendOptions: {title: "Pedestrian Exposure Values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 1,
             maxValue: 3.999,
@@ -800,16 +888,6 @@
           type: "class-breaks", 
           field: "BikeExp",  
           legendOptions: {title: "Bike Exposure Values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 1,
             maxValue: 3.999,
@@ -842,40 +920,30 @@
           type: "class-breaks", 
           field: "NMExp",  
           legendOptions: {title: "Non-Motorized Exposure Values"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 1,
             maxValue: 4.999,
-            symbol: less20_Bike_Exp,
+            symbol: less20_NMExp,
             label: "1 to 5" 
           }, {
             minValue: 5,
             maxValue: 29.999,
-            symbol: less40_Bike_Exp,
+            symbol: less40_NMExp,
             label: "5 to 30" 
           }, {
             minValue: 30,
             maxValue: 114.999,
-            symbol: less60_Bike_Exp,
+            symbol: less60_NMExp,
             label: "30 to 115"
           }, {
             minValue: 115,
             maxValue: 264.999,
-            symbol: less80_Bike_Exp,
+            symbol: less80_NMExp,
             label: "115 to 265" 
           }, {
           	minValue: 265,
           	maxValue: 3500,
-          	symbol: less100_Bike_Exp,
+          	symbol: less100_NMExp,
           	label: "265 to 3500"
           }]
         };
@@ -935,18 +1003,8 @@
 
         const rendererLinePed = {
           type: "class-breaks", 
-          field: "linePedLayer",  
+          field: "weight",  
           legendOptions: {title: "Pedestrian Exposure"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0,
             maxValue: 13.999,
@@ -977,96 +1035,38 @@
 
         const rendererLineBike = {
           type: "class-breaks", 
-          field: "lineBikeLayer",  
+          field: "weight",  
           legendOptions: {title: "Bicycle Exposure"},
-          defaultSymbol: {
-            type: "simple-fill",  
-            color: "black",
-            style: "backward-diagonal",
-            outline: {
-              width: 0.5,
-              color: [50,50,50,0.6]
-            }
-          },
-          defaultLabel: "no data", 
           classBreakInfos: [{
             minValue: 0,
             maxValue: 6.999,
-            symbol: less20_Bike_Exp,
+            symbol: less20_lineBike,
             label: "0 to 7" 
           }, {
             minValue: 7,
             maxValue: 35.999,
-            symbol: less40_Bike_Exp,
+            symbol: less40_lineBike,
             label: "7 to 36" 
           }, {
             minValue: 36,
             maxValue: 65.999,
-            symbol: less60_Bike_Exp,
+            symbol: less60_lineBike,
             label: "36 to 66"
           }, {
             minValue: 66,
             maxValue: 399.999,
-            symbol: less80_Bike_Exp,
+            symbol: less80_lineBike,
             label: "66 to 400" 
           }, {
           	minValue: 400,
           	maxValue: 900,
-          	symbol: less100_Bike_Exp,
+          	symbol: less100_lineBike,
           	label: "400 to 900"
           }]
         }
 
-        function findMaxMin(inputField){
-          if(inputField == "Bie" || inputField == "Pie" ) return [5, 27];
-          
-          else if (inputField == "BikeCrashC") return [0, 30];
-          else if (inputField == "BikeExp") return [0, 35];
-          else if (inputField == "Bike_Risk") return [0, 2.7];
-          
-          else if (inputField == "NMExp") return [0, 112];
-          
-          else if (inputField == "NMRisk") return [0, 5];
-          
-          else if (inputField == "PedCrashCt") return [0, 45];
-        
-          else if (inputField == "PedExp") return [0, 30];
-          
-          else if (inputField == "Ped_Risk") return [0, 3.8];
-          
-          else {
-            console.log("Error in attribute max min value");
-            return [0, 10];
-          }
-        }
         // Definition of polygon renderer with continuous color 
         function generatePolygonRenderer(inputField) {
-
-          const minMaxValue = findMaxMin(fieldDictionary[inputField]); 
-          const defaultSym = {
-            type: "simple-fill", 
-            outline: { 
-              color: [128, 128, 128, 0.2],
-              width: "0.5px"
-            }
-          };
-          const colorVisVar = {
-            type: "color",
-            field: fieldDictionary[inputField],
-            stops: [
-              { value: minMaxValue[0], color: "#FFFCD4" },
-              { value: minMaxValue[1], color: "#0D2644" }
-            ],
-            legendOptions: {
-              title: "Polygon " + inputField + " value"
-            }
-          };
-          var rendererPolygon = {
-            type: "simple", // autocasts as new SimpleRenderer()
-            symbol: defaultSym,
-            label: "Polygon",
-            visualVariables: colorVisVar
-          };
 
           if (fieldDictionary[inputField] == "Pie"){
             rendererPolygon = rendererPolygonPie;
