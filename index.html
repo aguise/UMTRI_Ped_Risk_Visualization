@@ -950,30 +950,30 @@
 
         // Point layer definition by individual type
         const schoolSym = {
-          type: "simple-marker", 
-          color: "orange",
-          width: 5,
-          style: "circle"
+          type: "picture-marker", 
+          url: "http://cdn.onlinewebfonts.com/svg/img_67069.png",
+          width: 20,
+          height: 20
         };
         const barSym = {
-          type: "simple-marker", 
-          color: "#blue",
-          width: 5,
-          style: "square"
+          type: "picture-marker", 
+          url: "https://cdn1.iconfinder.com/data/icons/cocktail-bar-glyph/100/martini_bar_restaurant_drink_club-512.png",
+          width: 20,
+          height: 20
         };
         
         const bikeSym = {
-          type: "simple-marker", 
-          color: "red",
-          width: 5,
-          style: "diamond"
+          type: "picture-marker", 
+          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/USDOT_highway_sign_bicycle_symbol_-_black.svg/1280px-USDOT_highway_sign_bicycle_symbol_-_black.svg.png",
+          width: 20,
+          height: 10
         };
         
         const pedSym = {
-          type: "simple-marker", 
-          color: "green",
-          width: 5,
-          style: "triangle"
+          type: "picture-marker", 
+          url: "https://cdn1.iconfinder.com/data/icons/user-experience/512/man-512.png",
+          width: 20,
+          height: 20
         };
         // Point layer definition
         const rendererPoint = {
@@ -995,7 +995,7 @@
             symbol: barSym,
             label: "bar accidents"
           }, {
-            value: "school",
+            value: "schools",
             symbol: schoolSym,
             label: "school accidents"
           }]
