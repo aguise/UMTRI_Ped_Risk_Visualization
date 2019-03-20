@@ -70,36 +70,8 @@
           content: [{
             type: "fields",
             fieldInfos: [{
-              fieldName: "FID",
-              label: "FID",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "BErank",
-              label: "BErank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "BIErank",
-              label: "BIErank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "BRrank",
-              label: "BRrank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            },{
               fieldName: "Bie",
-              label: "Bike_Index_of_the_Environment ",
+              label: "BIE",
               format: {
                 places: 0,
                 digitSeparator: true
@@ -126,13 +98,6 @@
                 digitSeparator: true
               }
             }, {
-              fieldName: "NMErank",
-              label: "NMErank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
               fieldName: "NMExp",
               label: "Non_Motorized_Exposure",
               format: {
@@ -146,34 +111,6 @@
                 places: 0,
                 digitSeparator: true
               }
-            }, {
-              fieldName: "NMRrank",
-              label: "NMRrank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "PErank",
-              label: "PErank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "PIErank",
-              label: "PIErank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "PRrank",
-              label: "PRrank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
             },{
               fieldName: "PedCrashCt",
               label: "Pedestrian_Crash_Count",
@@ -183,7 +120,7 @@
               }
             }, {
               fieldName: "Pie",
-              label: "Pedestrian_Index_of_Environment ",
+              label: "PIE",
               format: {
                 places: 0,
                 digitSeparator: true
@@ -202,20 +139,6 @@
                 places: 0,
                 digitSeparator: true
               }
-            },{
-              fieldName: "Rid",
-              label: "Rid",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            },{
-              fieldName: "fips",
-              label: "fips",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
             }]
           }]
         };
@@ -225,26 +148,12 @@
           content: [{
             type: "fields",
             fieldInfos: [{
-              fieldName: "FID",
-              label: "FID",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "rank",
-              label: "rank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
               fieldName: "weight",
               label: "weight",
               format: {
                 places: 0,
                 digitSeparator: true
-              }
+            }
             }]
           }]
         };
@@ -254,20 +163,6 @@
           content: [{
             type: "fields",
             fieldInfos: [{
-              fieldName: "FID",
-              label: "FID",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
-              fieldName: "rank",
-              label: "rank",
-              format: {
-                places: 0,
-                digitSeparator: true
-              }
-            }, {
               fieldName: "weight",
               label: "weight",
               format: {
@@ -556,12 +451,97 @@
           }
         };
 
-        const BikeRoadColors = {
-        	colorsForClassBreaks: {
-        		colors: [0, 1, 2, 3, 4],
-        		numClasses: 5
-        	}
-        };
+        const less20_linePed = {
+          type: "simple-fill",  
+          color: "#edf8e9",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+      };
+      const less40_linePed = {
+          type: "simple-fill",  
+          color: "#bae4b3",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+      };
+      const less60_linePed = {
+          type: "simple-fill",  
+          color: "#74c476",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+      };
+      const less80_linePed = {
+          type: "simple-fill",  
+          color: "#31a354",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+      };
+      const less100_linePed = {
+          type: "simple-fill",  
+          color: "#006d2c",
+          style: "solid",
+          outline: {
+            width: 0.2,
+            color: [ 255, 255, 255, 0.5 ]
+          }
+      };
+
+      const less20_lineBike = {
+      	type: "simple-fill",  
+        color: "#eff3ff",
+        style: "solid",
+        outline: {
+          width: 0.2,
+          color: [ 255, 255, 255, 0.5 ]
+         }
+      };
+      const less40_lineBike = {
+      	type: "simple-fill",  
+        color: "#bdd7e7",
+        style: "solid",
+        outline: {
+          width: 0.2,
+          color: [ 255, 255, 255, 0.5 ]
+         }
+      };
+      const less60_lineBike = {
+      	type: "simple-fill",  
+        color: "#6baed6",
+        style: "solid",
+        outline: {
+          width: 0.2,
+          color: [ 255, 255, 255, 0.5 ]
+         }
+      };
+      const less80_lineBike = {
+      	type: "simple-fill",  
+        color: "#3182bd",
+        style: "solid",
+        outline: {
+          width: 0.2,
+          color: [ 255, 255, 255, 0.5 ]
+         }
+      };
+      const less100_lineBike = {
+      	type: "simple-fill",  
+        color: "#08519c",
+        style: "solid",
+        outline: {
+          width: 0.2,
+          color: [ 255, 255, 255, 0.5 ]
+         }
+      };
 
         // Color bin definition Pie 
         const rendererPolygonPie = {
@@ -692,7 +672,7 @@
 
         const rendererPolygon_BikeRisk = {
           type: "class-breaks", 
-          field: "Ped_Risk",  
+          field: "Bike_Risk",  
           legendOptions: {title: "Bicycle Risk Values"},
           defaultSymbol: {
             type: "simple-fill",  
@@ -734,7 +714,7 @@
 
         const rendererPolygon_NM_Risk = {
           type: "class-breaks", 
-          field: "Ped_Risk",  
+          field: "NMRisk",  
           legendOptions: {title: "Non-Motorized Risk Values"},
           defaultSymbol: {
             type: "simple-fill",  
@@ -776,7 +756,7 @@
 
         const rendererPolygon_PedExposure = {
           type: "class-breaks", 
-          field: "Ped_Risk",  
+          field: "PedExp",  
           legendOptions: {title: "Pedestrian Exposure Values"},
           defaultSymbol: {
             type: "simple-fill",  
@@ -818,7 +798,7 @@
 
         const rendererPolygon_BikeExposure = {
           type: "class-breaks", 
-          field: "Ped_Risk",  
+          field: "BikeExp",  
           legendOptions: {title: "Bike Exposure Values"},
           defaultSymbol: {
             type: "simple-fill",  
@@ -860,7 +840,7 @@
 
         const rendererPolygon_NM_Exposure = {
           type: "class-breaks", 
-          field: "Ped_Risk",  
+          field: "NMExp",  
           legendOptions: {title: "Non-Motorized Exposure Values"},
           defaultSymbol: {
             type: "simple-fill",  
@@ -952,6 +932,90 @@
             label: "school accidents"
           }]
         };
+
+        const rendererLinePed = {
+          type: "class-breaks", 
+          field: "linePedLayer",  
+          legendOptions: {title: "Pedestrian Exposure"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 0,
+            maxValue: 13.999,
+            symbol: less20_linePed,
+            label: "0 to 14" 
+          }, {
+            minValue: 14,
+            maxValue: 51.999,
+            symbol: less40_linePed,
+            label: "14 to 52" 
+          }, {
+            minValue: 52,
+            maxValue: 86.999,
+            symbol: less60_linePed,
+            label: "52 to 87"
+          }, {
+            minValue: 87,
+            maxValue: 489.999,
+            symbol: less80_linePed,
+            label: "87 to 490" 
+          }, {
+          	minValue: 490,
+          	maxValue: 1100,
+          	symbol: less100_linePed,
+          	label: "490 to 1100"
+          }]
+        }
+
+        const rendererLineBike = {
+          type: "class-breaks", 
+          field: "lineBikeLayer",  
+          legendOptions: {title: "Bicycle Exposure"},
+          defaultSymbol: {
+            type: "simple-fill",  
+            color: "black",
+            style: "backward-diagonal",
+            outline: {
+              width: 0.5,
+              color: [50,50,50,0.6]
+            }
+          },
+          defaultLabel: "no data", 
+          classBreakInfos: [{
+            minValue: 0,
+            maxValue: 6.999,
+            symbol: less20_Bike_Exp,
+            label: "0 to 7" 
+          }, {
+            minValue: 7,
+            maxValue: 35.999,
+            symbol: less40_Bike_Exp,
+            label: "7 to 36" 
+          }, {
+            minValue: 36,
+            maxValue: 65.999,
+            symbol: less60_Bike_Exp,
+            label: "36 to 66"
+          }, {
+            minValue: 66,
+            maxValue: 399.999,
+            symbol: less80_Bike_Exp,
+            label: "66 to 400" 
+          }, {
+          	minValue: 400,
+          	maxValue: 900,
+          	symbol: less100_Bike_Exp,
+          	label: "400 to 900"
+          }]
+        }
 
         function findMaxMin(inputField){
           if(inputField == "Bie" || inputField == "Pie" ) return [5, 27];
@@ -1048,34 +1112,21 @@
           url: "https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/bike_roadwgts_Michigan_shapefile_aguise/FeatureServer/0?token=PwV--ijdr0r7rSJowrB_Mz84lRcQPbIOW_Ak4hq9tyioigHL4BOrsRGGUUaU4IJ2qJpltRBDvfg9kd7dTI3dcaapvamjKwaGQdB6J7gIPpGKUjJUbfHoFLU3LuaRRDhXkPsP0aA3fKjGyFSE0NikXl9hegzjjISpr3AB7nNNpZaKho2xdnJHmbNjivIlEYiZ-NnCeSNdbykkn2QmGz9YsNu-GUsbMs6-lrgMebrNmWvdE0GgRhA86PfDuy2nt41m",
           outFields: ["*"],
           popupTemplate: popupTemplateLineBike,
+          renderer: rendererLineBike,
           id: "lineBikeLayer",
           visible: false
         });
+        map.add(lineBikeLayer);
         const linePedLayer = new FeatureLayer({
           url: "https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/pedestrian_roadwgts_Michigan_shapefile/FeatureServer/0?token=aFKpBGnF5jBe8_RhnapvPxAXzuiDccdTnZJw7DKwjJa26IV2lbuN1zxW9o2OtpLtvpigU1xi7TiDjkOBJUt5lKuggQ1IU3OzM3fKq7fqTCyWYjeCYylNtQizmQb7__6sigbMZHcBO_Pve3W9pJePm8ZCAhWV-pTHPbh0vkHwPf6A8J8oroJ_DT1Q21Xmb80E7XlWdMl657FL3WnPpuvSS_P4f8xYsTqiray06aPgtklfbTmOoIbQzW1MuJookBev",
           outFields: ["*"],
           popupTemplate: popupTemplateLinePed,
+          renderer: rendererLinePed,
           id: "linePedLayer",
           visible: false
         });
+        map.add(linePedLayer);
 
-        var colorParamsPed = {
-          layer: linePedLayer,
-          basemap: map.basemap,
-          field: "Shape__Length",
-          legendOptions: {
-          	title: "Pedestrian Exposure"
-          },
-
-        };
-        var colorParamsBike = {
-          layer: lineBikeLayer,
-          basemap: map.basemap,
-          field: "Shape__Length",
-          legendOptions: {
-          	title: "Bicycle Exposure"
-          },
-      	};
         const pointLayer = new FeatureLayer({
           url: "https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/Points_of_Interest_aguise/FeatureServer/0?token=KZn8xOjNVlJcvNfbpkB-r0AXY_vUpPR0J-dGWx6jXx3GHWLlXAn--DjiehlRGWYJxo6cEdAYUDk-UKEznr3AOt9cvAmy5cr9DUURryn3ozlb4za5DNv6N93W_f8S21YAcpd9DHSa-heHedhv3EqDe43qpfvXAsGLeL7-DEAqPBxkt6SPX4evcgWLakiC53bUE_wLIZu4s-0GW_gFRJnjO1zRyk0K1D6zNyhkvSa5YEABprjlUSga0ISLWtHzT5jA",
           outFields: ["*"],
@@ -1117,34 +1168,7 @@
             });
           });
         });
-//----------------------------------------------------------------------------------------------------
-        colorRendererCreator.createClassBreaksRenderer(colorParamsPed)
-          .then(function(response) {
-            // set the renderer to the layer and add it to the map
-            linePedLayer.renderer = response.renderer;
-            map.add(linePedLayer);
-            return histogram({
-              layer: linePedLayer,
-              field: "Shape__Length"
-            });
-          })
-          .catch(function(error) {
-            console.log("there was an error: ", error);
-          });
-//----------------------------------------------------------------------------------------------------
-        colorRendererCreator.createClassBreaksRenderer(colorParamsBike)
-          .then(function(response) {
-            // set the renderer to the layer and add it to the map
-            lineBikeLayer.renderer = response.renderer;
-            map.add(lineBikeLayer);
-            return histogram({
-              layer: lineBikeLayer,
-              field: "Shape__Length"
-            });
-          })
-          .catch(function(error) {
-            console.log("there was an error: ", error);
-          });
+
 //----- select attribute ------------------------------------------------------------------------------
         
         var attributeTypeSelect = document.getElementById("att-type");
